@@ -6,10 +6,10 @@ prompt.get(['ваш неправильный текст'], function (err, result
     const text = result['ваш неправильный текст'].split("");
     let baza = ""
     text.forEach(bukva => {
-        if(bukva == "з") {
+        if(bukva == "з" || bukva == "З") {
             return baza += "Z"
         };
-        if(bukva == "в") {
+        if(bukva == "в" || bukva == "В") {
             return baza += "V"
         };
         baza += bukva
